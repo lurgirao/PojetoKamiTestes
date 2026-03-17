@@ -21,5 +21,22 @@ namespace PojetoKamiTestes
         {
 
         }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            CriarPedido tela = new CriarPedido();
+            tela.ShowDialog();
+        }
+
+        private void btn_criarPedido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_funcionarios_Click(object sender, EventArgs e)
+        {
+            GerenciamentoFuncionarios tela = new GerenciamentoFuncionarios();
+            tela.ShowDialog();
+        }
     }
 }

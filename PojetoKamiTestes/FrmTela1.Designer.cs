@@ -32,13 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.lOJAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_criarPedido = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_pedidoAndto = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_financeiro = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_estoque = new System.Windows.Forms.ToolStripMenuItem();
             this.uSUÁRIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_funcionarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_resetSenha = new System.Windows.Forms.ToolStripMenuItem();
             this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sair = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +41,12 @@
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
             this.btn_novaSenha = new System.Windows.Forms.Button();
+            this.btn_criarPedido = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_pedidoAndto = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_financeiro = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_estoque = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_funcionarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_resetSenha = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.menuStrip1.Size = new System.Drawing.Size(710, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -80,42 +81,6 @@
             this.lOJAToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.lOJAToolStripMenuItem.Text = "LOJA";
             // 
-            // btn_criarPedido
-            // 
-            this.btn_criarPedido.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btn_criarPedido.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_criarPedido.Image = ((System.Drawing.Image)(resources.GetObject("btn_criarPedido.Image")));
-            this.btn_criarPedido.Name = "btn_criarPedido";
-            this.btn_criarPedido.Size = new System.Drawing.Size(215, 36);
-            this.btn_criarPedido.Text = "Criar Pedido";
-            // 
-            // btn_pedidoAndto
-            // 
-            this.btn_pedidoAndto.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btn_pedidoAndto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_pedidoAndto.Image = ((System.Drawing.Image)(resources.GetObject("btn_pedidoAndto.Image")));
-            this.btn_pedidoAndto.Name = "btn_pedidoAndto";
-            this.btn_pedidoAndto.Size = new System.Drawing.Size(215, 36);
-            this.btn_pedidoAndto.Text = "Pedido em Andamento";
-            // 
-            // btn_financeiro
-            // 
-            this.btn_financeiro.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btn_financeiro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_financeiro.Image = ((System.Drawing.Image)(resources.GetObject("btn_financeiro.Image")));
-            this.btn_financeiro.Name = "btn_financeiro";
-            this.btn_financeiro.Size = new System.Drawing.Size(215, 36);
-            this.btn_financeiro.Text = "Financeiro";
-            // 
-            // btn_estoque
-            // 
-            this.btn_estoque.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btn_estoque.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_estoque.Image = ((System.Drawing.Image)(resources.GetObject("btn_estoque.Image")));
-            this.btn_estoque.Name = "btn_estoque";
-            this.btn_estoque.Size = new System.Drawing.Size(215, 36);
-            this.btn_estoque.Text = "Estoque";
-            // 
             // uSUÁRIOToolStripMenuItem
             // 
             this.uSUÁRIOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -126,24 +91,6 @@
             this.uSUÁRIOToolStripMenuItem.Name = "uSUÁRIOToolStripMenuItem";
             this.uSUÁRIOToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.uSUÁRIOToolStripMenuItem.Text = "USUÁRIO";
-            // 
-            // btn_funcionarios
-            // 
-            this.btn_funcionarios.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btn_funcionarios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_funcionarios.Image = ((System.Drawing.Image)(resources.GetObject("btn_funcionarios.Image")));
-            this.btn_funcionarios.Name = "btn_funcionarios";
-            this.btn_funcionarios.Size = new System.Drawing.Size(250, 22);
-            this.btn_funcionarios.Text = "Gerenciamento de Funcionários";
-            // 
-            // btn_resetSenha
-            // 
-            this.btn_resetSenha.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btn_resetSenha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_resetSenha.Image = ((System.Drawing.Image)(resources.GetObject("btn_resetSenha.Image")));
-            this.btn_resetSenha.Name = "btn_resetSenha";
-            this.btn_resetSenha.Size = new System.Drawing.Size(250, 22);
-            this.btn_resetSenha.Text = "Reset de Senha";
             // 
             // sAIRToolStripMenuItem
             // 
@@ -190,7 +137,7 @@
             this.msk_usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.msk_usuario.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.msk_usuario.Location = new System.Drawing.Point(312, 225);
-            this.msk_usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.msk_usuario.Margin = new System.Windows.Forms.Padding(4);
             this.msk_usuario.Mask = "000,000,000-00";
             this.msk_usuario.Name = "msk_usuario";
             this.msk_usuario.Size = new System.Drawing.Size(163, 23);
@@ -199,7 +146,7 @@
             // txt_senha
             // 
             this.txt_senha.Location = new System.Drawing.Point(312, 277);
-            this.txt_senha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_senha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_senha.MaxLength = 8;
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.PasswordChar = '*';
@@ -218,12 +165,13 @@
             this.btn_login.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_login.Location = new System.Drawing.Point(312, 336);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(163, 33);
             this.btn_login.TabIndex = 5;
             this.btn_login.Text = "ENTRAR";
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // btn_novaSenha
             // 
@@ -232,12 +180,68 @@
             this.btn_novaSenha.FlatAppearance.BorderSize = 0;
             this.btn_novaSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_novaSenha.Location = new System.Drawing.Point(312, 378);
-            this.btn_novaSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_novaSenha.Margin = new System.Windows.Forms.Padding(4);
             this.btn_novaSenha.Name = "btn_novaSenha";
             this.btn_novaSenha.Size = new System.Drawing.Size(163, 28);
             this.btn_novaSenha.TabIndex = 6;
             this.btn_novaSenha.Text = "Esqueci a senha";
             this.btn_novaSenha.UseVisualStyleBackColor = true;
+            // 
+            // btn_criarPedido
+            // 
+            this.btn_criarPedido.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btn_criarPedido.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_criarPedido.Image = ((System.Drawing.Image)(resources.GetObject("btn_criarPedido.Image")));
+            this.btn_criarPedido.Name = "btn_criarPedido";
+            this.btn_criarPedido.Size = new System.Drawing.Size(215, 36);
+            this.btn_criarPedido.Text = "Criar Pedido";
+            this.btn_criarPedido.Click += new System.EventHandler(this.btn_criarPedido_Click);
+            // 
+            // btn_pedidoAndto
+            // 
+            this.btn_pedidoAndto.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btn_pedidoAndto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_pedidoAndto.Image = ((System.Drawing.Image)(resources.GetObject("btn_pedidoAndto.Image")));
+            this.btn_pedidoAndto.Name = "btn_pedidoAndto";
+            this.btn_pedidoAndto.Size = new System.Drawing.Size(215, 36);
+            this.btn_pedidoAndto.Text = "Pedido em Andamento";
+            // 
+            // btn_financeiro
+            // 
+            this.btn_financeiro.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btn_financeiro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_financeiro.Image = ((System.Drawing.Image)(resources.GetObject("btn_financeiro.Image")));
+            this.btn_financeiro.Name = "btn_financeiro";
+            this.btn_financeiro.Size = new System.Drawing.Size(215, 36);
+            this.btn_financeiro.Text = "Financeiro";
+            // 
+            // btn_estoque
+            // 
+            this.btn_estoque.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btn_estoque.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_estoque.Image = ((System.Drawing.Image)(resources.GetObject("btn_estoque.Image")));
+            this.btn_estoque.Name = "btn_estoque";
+            this.btn_estoque.Size = new System.Drawing.Size(215, 36);
+            this.btn_estoque.Text = "Estoque";
+            // 
+            // btn_funcionarios
+            // 
+            this.btn_funcionarios.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btn_funcionarios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_funcionarios.Image = ((System.Drawing.Image)(resources.GetObject("btn_funcionarios.Image")));
+            this.btn_funcionarios.Name = "btn_funcionarios";
+            this.btn_funcionarios.Size = new System.Drawing.Size(264, 36);
+            this.btn_funcionarios.Text = "Gerenciamento de Funcionários";
+            this.btn_funcionarios.Click += new System.EventHandler(this.btn_funcionarios_Click);
+            // 
+            // btn_resetSenha
+            // 
+            this.btn_resetSenha.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btn_resetSenha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_resetSenha.Image = ((System.Drawing.Image)(resources.GetObject("btn_resetSenha.Image")));
+            this.btn_resetSenha.Name = "btn_resetSenha";
+            this.btn_resetSenha.Size = new System.Drawing.Size(264, 36);
+            this.btn_resetSenha.Text = "Reset de Senha";
             // 
             // Frm_principal
             // 
@@ -257,11 +261,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KAMI KAMI Yakissoba";
-            this.TransparencyKey = System.Drawing.Color.Black;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

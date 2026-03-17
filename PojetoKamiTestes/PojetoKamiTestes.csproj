@@ -46,16 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarPedido.Designer.cs">
+      <DependentUpon>CriarPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTela1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmTela1.Designer.cs">
       <DependentUpon>FrmTela1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcionarios.cs" />
+    <Compile Include="GerenciamentoFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoFuncionarios.Designer.cs">
+      <DependentUpon>GerenciamentoFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CriarPedido.resx">
+      <DependentUpon>CriarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTela1.resx">
       <DependentUpon>FrmTela1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoFuncionarios.resx">
+      <DependentUpon>GerenciamentoFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
