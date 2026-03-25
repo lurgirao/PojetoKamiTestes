@@ -65,6 +65,12 @@
     <Compile Include="GerenciamentoFuncionarios.Designer.cs">
       <DependentUpon>GerenciamentoFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pedidoandamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidoandamento.Designer.cs">
+      <DependentUpon>Pedidoandamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CriarPedido.resx">
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GerenciamentoFuncionarios.resx">
       <DependentUpon>GerenciamentoFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidoandamento.resx">
+      <DependentUpon>Pedidoandamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
