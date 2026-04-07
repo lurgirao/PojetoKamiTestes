@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PojetoKamiTestes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,20 +10,40 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace PojetoKamiTestes
 {
     public partial class CriarPedido : Form
     {
+        // ✅ AQUI SIM (dentro da classe)
+        Pedidoandamento telaPedidos;
+
         Dictionary<string, (double preco, int quantidade)> pedido =
-        new Dictionary<string, (double, int)>();
+            new Dictionary<string, (double, int)>();
+
+        private void LimparCheckboxes(Control parent)
+        {
+            foreach (Control ctrl in parent.Controls)
+            {
+                if (ctrl is CheckBox cb)
+                {
+                    cb.Checked = false;
+                }
+                else
+                {
+                    LimparCheckboxes(ctrl);
+                }
+            }
+        }
         public CriarPedido()
         {
+            Pedidoandamento telaPedidos;
             InitializeComponent();
         }
 
         private void CriarPedido_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_FinalizarPedido_Click(object sender, EventArgs e)
@@ -99,7 +120,7 @@ namespace PojetoKamiTestes
         {
 
         }
-            private void btn_pedido_Click(object sender, EventArgs e)
+        private void btn_pedido_Click(object sender, EventArgs e)
         {
             pedido.Clear();
 
@@ -138,11 +159,29 @@ namespace PojetoKamiTestes
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+
+
         {
+            if (telaPedidos == null || telaPedidos.IsDisposed)
+            {
+                telaPedidos = new Pedidoandamento();
+                telaPedidos.Show();
+            }
+
             var copiaPedido = new Dictionary<string, (double, int)>(pedido);
 
-            Pedidoandamento pedidoAndamento = new Pedidoandamento(copiaPedido);
-            pedidoAndamento.ShowDialog();
+            telaPedidos.AdicionarPedido(copiaPedido);
+
+            LimparCheckboxes(this);
+            pedido.Clear();
+
         }
-    } 
+
+
+        private void btn_pedidoAndto_Click(object sender, EventArgs e)
+        {
+            Pedidoandamento tela = new Pedidoandamento();
+            tela.Show();
+        }
     }
+}

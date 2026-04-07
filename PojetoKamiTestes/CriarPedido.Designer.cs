@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriarPedido));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lista_poke = new System.Windows.Forms.CheckBox();
             this.lista_urumaki = new System.Windows.Forms.CheckBox();
             this.lista_hossomaki = new System.Windows.Forms.CheckBox();
@@ -62,10 +66,6 @@
             this.lista_cam = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_FinalizarPedido = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -90,6 +90,50 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DIVERSOS";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(0, 104);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(127, 17);
+            this.checkBox3.TabIndex = 15;
+            this.checkBox3.Tag = "29,90";
+            this.checkBox3.Text = "08 - Combo 12 peças";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(0, 127);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(127, 17);
+            this.checkBox2.TabIndex = 14;
+            this.checkBox2.Tag = "35,90";
+            this.checkBox2.Text = "09 - Combo 14 peças";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(0, 150);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(127, 17);
+            this.checkBox4.TabIndex = 26;
+            this.checkBox4.Tag = "41,90";
+            this.checkBox4.Text = "10 - Combo 16 peças";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label1.Location = new System.Drawing.Point(20, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 15);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Sushi - Sashimi - Enrolados";
             // 
             // lista_poke
             // 
@@ -300,6 +344,7 @@
             this.btn_pedidoAndto.Name = "btn_pedidoAndto";
             this.btn_pedidoAndto.Size = new System.Drawing.Size(215, 36);
             this.btn_pedidoAndto.Text = "Pedido em Andamento";
+            this.btn_pedidoAndto.Click += new System.EventHandler(this.btn_pedidoAndto_Click);
             // 
             // btn_financeiro
             // 
@@ -336,7 +381,7 @@
             this.btn_funcionarios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_funcionarios.Image = ((System.Drawing.Image)(resources.GetObject("btn_funcionarios.Image")));
             this.btn_funcionarios.Name = "btn_funcionarios";
-            this.btn_funcionarios.Size = new System.Drawing.Size(264, 36);
+            this.btn_funcionarios.Size = new System.Drawing.Size(250, 22);
             this.btn_funcionarios.Text = "Gerenciamento de Funcionários";
             // 
             // btn_resetSenha
@@ -345,7 +390,7 @@
             this.btn_resetSenha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_resetSenha.Image = ((System.Drawing.Image)(resources.GetObject("btn_resetSenha.Image")));
             this.btn_resetSenha.Name = "btn_resetSenha";
-            this.btn_resetSenha.Size = new System.Drawing.Size(264, 36);
+            this.btn_resetSenha.Size = new System.Drawing.Size(250, 22);
             this.btn_resetSenha.Text = "Reset de Senha";
             // 
             // sAIRToolStripMenuItem
@@ -445,50 +490,6 @@
             this.btn_FinalizarPedido.Text = "Adicionar Pedido";
             this.btn_FinalizarPedido.UseVisualStyleBackColor = true;
             this.btn_FinalizarPedido.Click += new System.EventHandler(this.btn_pedido_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label1.Location = new System.Drawing.Point(20, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 15);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Sushi - Sashimi - Enrolados";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(0, 150);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(127, 17);
-            this.checkBox4.TabIndex = 26;
-            this.checkBox4.Tag = "41,90";
-            this.checkBox4.Text = "10 - Combo 16 peças";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(0, 127);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(127, 17);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Tag = "35,90";
-            this.checkBox2.Text = "09 - Combo 14 peças";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(0, 104);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(127, 17);
-            this.checkBox3.TabIndex = 15;
-            this.checkBox3.Tag = "29,90";
-            this.checkBox3.Text = "08 - Combo 12 peças";
-            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
